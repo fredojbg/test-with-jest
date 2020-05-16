@@ -1,5 +1,5 @@
 // sound-player.js
-module.exports = class SoundPlayer {
+export default class SoundPlayer {
   constructor() {
     this.foo = 'bar';
   }
@@ -7,4 +7,4 @@ module.exports = class SoundPlayer {
   playSoundFile(fileName) {
     console.log('Playing sound file ' + fileName);
   }
-};
+}

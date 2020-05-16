@@ -1,6 +1,6 @@
-const SoundPlayer = require('./sound-player');
+import SoundPlayer from './sound-player';
 
-module.exports = class SoundPlayerConsumer {
+export default class SoundPlayerConsumer {
   constructor() {
     this.soundPlayer = new SoundPlayer();
   }
@@ -9,4 +9,4 @@ module.exports = class SoundPlayerConsumer {
     const coolSoundFileName = 'song.mp3';
     this.soundPlayer.playSoundFile(coolSoundFileName);
   }
-};
+}
